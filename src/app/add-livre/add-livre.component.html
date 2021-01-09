@@ -1,0 +1,36 @@
+<div class="container"> 
+<div> <h2>Ajouter un Livre :</h2>
+ </div>
+
+<form >
+<div class="col-sm-2 col-md-2 col-lg-2"> 
+  <label >ID Livre</label>
+          <input type="text" [(ngModel)]="newLivre.idLivre " name="idLivre" class="form-control"> 
+ </div>
+
+<div class="col-sm-4 col-md-4 col-lg-4" > 
+        <label >Nom Livre</label> 
+             <input type="text"[(ngModel)]= "newLivre.nomLivre " name="nomLivre" class="form-control">
+ </div> 
+
+ <div class="col-sm-2 col-md-2 col-lg-2"> 
+    <label >Prix Livre</label>
+        <input type="number" [(ngModel)]= "newLivre.prixLivre " name="prixLivre" class="form-control"> 
+ </div>
+
+ <div class="col-sm-4 col-md-4 col-lg-4">
+     <label >Date création</label>
+     <input type="date" [(ngModel)]= "newLivre.dateCreation" name="dateCreation" class="form-control">
+
+ </div> 
+
+ <div  class="mt-2"> 
+ 
+     <button type="submit" (click)="addLivre()" class="btn btn-success">Ajouter</button>
+     <div>
+         <h2> {{ message }} </h2>
+     </div>
+
+ </div> 
+</form> 
+</div>
